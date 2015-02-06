@@ -38,7 +38,7 @@
 		<div class="about">
 			<h2>关于</h2>
 			<p>黄梦龙，88年生，游戏程序员，现在在北京一个创业团队开发商业游戏。</p>
-			<p>本博客使用Go语言开发，目前主要的主题是游戏服务器技术及Go语言，项目代码托管在<a href="https://github.com/huangml/disksing.com">GitHub</a>上。</p>
+			<p>本博客使用Go语言开发，目前主要的主题是游戏服务器编程及Go语言，项目代码托管在<a href="https://github.com/huangml/disksing.com">GitHub</a>上。</p>
 			<p>这里没有评论系统，有问题可以通过以下各种方式联系到我，文章的问题可以在GitHub项目中提交Issue或PR。</p>
 			<ul>
 				<li>邮箱：menglong ⓐ outlook.com</li>
@@ -51,7 +51,7 @@
 
 		<footer>
 			<p>本站文章采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>进行许可，文中涉及代码采用<a rel="license" href="http://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal</a>进行许可</p>
-			<p><a href="http://blog.disksing.com/">硬盘在歌唱</a> &copy; 2015</p>
+			<p><a href="http://disksing.com/">硬盘在歌唱</a> &copy; 2015</p>
 		</footer>
 </div></div>
 	

@@ -22,7 +22,7 @@
 
 	<footer>
 		<p>本站文章采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>进行许可，文中涉及代码采用<a rel="license" href="http://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal</a>进行许可</p>
-		<p><a href="http://blog.disksing.com/">硬盘在歌唱</a> &copy; 2015</p>
+		<p><a href="http://disksing.com/">硬盘在歌唱</a> &copy; 2015</p>
 	</footer>
 </body>
 </html>
