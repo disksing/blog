@@ -1,135 +1,3 @@
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize (modified) */
-
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-body {
-  margin: 0;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
-}
-
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  vertical-align: baseline;
-}
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-[hidden],
-template {
-  display: none;
-}
-
-a {
-  background-color: transparent;
-}
-
-a:active,
-a:hover {
-  outline: 0;
-}
-
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-
-b,
-strong {
-  font-weight: bold;
-}
-
-dfn {
-  font-style: italic;
-}
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-mark {
-  background: #ff0;
-  color: #000;
-}
-
-small {
-  font-size: 80%;
-}
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -0.5em;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-img {
-  border: 0;
-}
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
-figure {
-  margin: 1em 40px;
-}
-
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
-}
-
-pre {
-  overflow: auto;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-td,
-th {
-  padding: 0;
-}
-
-/*disksing*/
-
 html {
   font-size: 62.5%;
 }
@@ -143,6 +11,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 2.0em;
+  font-weight: bold;
   font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif; 
 }
 
@@ -158,13 +27,10 @@ h3 {
   font-size: 1.1em;
 }
 
-h2 {
-  margin-left: -0.75em;
+article h2:before {
+  content: "| ";
 }
 
-h2:before {
-  content: " | ";
-}
 
 ::-moz-selection {
     background: #D6EDFF;
@@ -183,6 +49,7 @@ a {
 
 a:hover {
   color: #111;
+  text-decoration: none;
 }
 
 code {
@@ -242,8 +109,10 @@ table td {
     border-top: #EFEFEF 1px solid;
 }
 
-header {
+footer {
+  border-top: #CFCFCF 1px solid;
   text-align: center;
+  font-size: 0.8em;
 }
 
 .post {
@@ -251,42 +120,6 @@ header {
   margin: 0 auto;
 }
 
-footer {
-  border-top: #CFCFCF 1px solid;
-  text-align: center;
-  font-size: 0.8em;
-}
-
-.center-float {
-  float: left;
-  position: relative;
-  left: 50%;
-}
-
-.auto-size {
-  border-top: #CFCFCF 1px solid;
-  float: left;
-  position: relative;
-  left: -50%;
-}
-
-.category-item {
-  float: left;
-  margin-left: 5em;
-}
-
-.desc {
-  font-size: 0.8em;
-  margin-left: 1em;
-  margin-top: -1em;
-}
-
-.clear {
-  clear: both;
-}
-
 .about {
   border-top: #CFCFCF 1px solid;
-  margin: 0 auto;
-  padding-left: 5em;
 }
