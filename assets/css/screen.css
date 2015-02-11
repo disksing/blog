@@ -109,6 +109,10 @@ table td {
     border-top: #EFEFEF 1px solid;
 }
 
+header {
+  text-align: center;
+}
+
 footer {
   border-top: #CFCFCF 1px solid;
   text-align: center;
@@ -122,4 +126,10 @@ footer {
 
 .about {
   border-top: #CFCFCF 1px solid;
+}
+
+.desc {
+  margin-top: -1em;
+  margin-left: 1em;
+  font-size: 0.8em;
 }

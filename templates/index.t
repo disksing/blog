@@ -24,7 +24,7 @@
 
 <body>
 <div class="container">
-	<header class="row text-center">
+	<header class="row">
 		<h1><i class="fa fa-music"></i> 硬盘在歌唱 <i class="fa fa-music"></i></h1>
 		<p>我编程三日，两耳不闻人声，只有硬盘在歌唱。</p>
 	</header>
@@ -33,11 +33,11 @@
 		{{range .}}
 		<div class="col-xs-12 col-sm-6 col-md-3">
 			<h2><i class="fa fa-pencil"></i> {{.Title}}</h2>
-			{{if .Description}} <p class="desc small">{{.Description}}</p> {{end}}
+			{{if .Description}} <p class="desc">{{.Description}}</p> {{end}}
 			{{range .Posts}}
 			  <p>
 					<a href="/{{.Name}}">{{.Title}}</a>
-					{{if .Description}} <p class="desc small">{{.Description}}</p> {{end}}
+					{{if .Description}} <p class="desc">{{.Description}}</p> {{end}}
 				</p>
 			{{end}}
 		</div>

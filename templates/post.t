@@ -23,11 +23,11 @@
 
 <body>
 <div class="post">
-	<header class="row col-xs-10 col-xs-offset-1 text-center">
+	<header>
 		<h1>{{.Title}}</h1>
 	</header>
 
-	<article class="row col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0">
+	<article>
 {{.Content}}
 	</article>
 

@@ -1,5 +1,5 @@
 title:  程序员笑话集锦
-description: 搜集并翻译的一些程序笑话，大部分来自stackoverflow
+description: 搜集并翻译的一些程序笑话。
 time: 2014/11/01 15:10
 category: translate
 ++++++++
