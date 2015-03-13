@@ -447,7 +447,7 @@ if m, ok := all.Child(1).(Group); ok {
 再考虑一下“购买”这个操作，面向对象的实现中，购买的类型是`MenuComponent`，所以购买操作同时可以应用于`Menu`和`MenuItem`。如果用Go语言的思维方式来考察，可购买对象的唯一要求是有`Price()`，所以购买操作的参数是这样的接口：
 ```golang
 type Product interface {
-Price() float32
+	Price() float32
 }
 ```
 
