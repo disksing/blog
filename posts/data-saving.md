@@ -77,3 +77,13 @@ proxycache是两种角色的结合体。
 
 1. 用比较熟悉的[Tokyo Cabinet](http://fallabs.com/tokyocabinet/)，只是这个项目已经多年没有更新了，也没有社区什么的。现在我们用Go语言，自己写个driver肯定是免不了的了。
 2. rocksDB或levelDB的封装。可选项有[LedisDB](http://ledisdb.com/)，[SSDB](http://ssdb.io/zh_cn/)，还有很多类似的，可真心没法判断是不是靠谱ToT
+
+-----------------------
+
+## Q&A
+
+### 最后选择了什么数据库呢？
+
+我比较倾向于使用LevelDB的封装。首先是试了SSDB，发现不是很稳定，测试中挂了好几次。现在用的是RiakDB，同样可以选择LevelDB做存储后端，轻松构建去中心化的集群，测试结果还是不错的，在这里安利一下。
+
+另外现在阿里云提供持久化的KVStore服务了，如果靠谱的话我考虑迁上去，毕竟自己做运维，折腾数据库还是挺麻烦的……
