@@ -2,7 +2,6 @@ package main
 
 import (
 	"bytes"
-	"fmt"
 	"net/http"
 	"os"
 	"path/filepath"
@@ -44,16 +43,30 @@ func build() {
 				return nil
 			}
 
-			pages[p.Name] = b
+			pages["/"+p.Name] = b
 			addPostToCategory(p)
+			addPostToFeed(p)
 		}
 		return nil
 	})
 
+	log.Info("create home page")
+
 	var b bytes.Buffer
 	err = t.ExecuteTemplate(&b, "index.t", categories)
 	log.FatalOnError(err)
-	pages["index"] = b
+	pages["/"] = b
+
+	log.Info("create feeds")
+	feed := feed()
+
+	atom, err := feed.ToAtom()
+	log.FatalOnError(err)
+	pages["/feed"] = *bytes.NewBufferString(atom)
+
+	rss, err := feed.ToRss()
+	log.FatalOnError(err)
+	pages["/rss"] = *bytes.NewBufferString(rss)
 }
 
 func serv() {
@@ -64,23 +77,8 @@ func serv() {
 	http.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir("assets"))))
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-
-		b := func() *bytes.Buffer {
-			if b, ok := pages[r.RequestURI[1:]]; ok {
-				return &b
-			}
-
-			if b, ok := pages["index"]; ok {
-				return &b
-			}
-
-			return nil
-		}()
-
-		if b != nil {
-			//w.Header().Add("Cache-Control", "max-age=3600")
+		if b, ok := pages[r.RequestURI]; ok {
 			w.Write(b.Bytes())
-			log.Stat(fmt.Sprintf("pv %s %s", r.RequestURI, r.Referer()))
 		} else {
 			http.NotFound(w, r)
 		}

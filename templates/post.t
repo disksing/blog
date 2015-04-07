@@ -35,6 +35,7 @@
 
 <footer>
 	<p>本站文章采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><i class="fa fa-cc"></i> BY 4.0</a>进行许可，文中涉及代码采用<a rel="license" href="http://creativecommons.org/publicdomain/zero/1.0/"><i class="fa fa-cc"></i>0 1.0 Universal</a>进行许可</p>
+	<p>订阅本站文章：<a href="http://disksing.com/feed" target="_blank"><i class="fa fa-rss-square"></i>ATOM</a>  <a href="http://disksing.com/rss" target="_blank"><i class="fa fa-rss-square"></i>RSS</a></p>
 	<p><a href="http://disksing.com/"><i class="fa fa-music"></i> 硬盘在歌唱 <i class="fa fa-music"></i></a> <i class="fa fa-copyright"></i> 2015</p>
 </footer>
 </body>

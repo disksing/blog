@@ -1,0 +1,23 @@
+{
+	"ImportPath": "github.com/huangml/disksing.com",
+	"GoVersion": "go1.4",
+	"Deps": [
+		{
+			"ImportPath": "github.com/gorilla/feeds",
+			"Rev": "a1baeef20d925fde02b1575dbb1f587de6123af3"
+		},
+		{
+			"ImportPath": "github.com/huangml/log",
+			"Rev": "25adb9ed920d0f6454951a8c70d2d4bf1fe35ae4"
+		},
+		{
+			"ImportPath": "github.com/russross/blackfriday",
+			"Comment": "v1.2-38-gfe5c2f4",
+			"Rev": "fe5c2f48a9d26d9d276a3c8a7ebde27701b6fe16"
+		},
+		{
+			"ImportPath": "github.com/shurcooL/sanitized_anchor_name",
+			"Rev": "9a8b7d4e8f347bfa230879db9d7d4e4d9e19f962"
+		}
+	]
+}
