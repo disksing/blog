@@ -15,50 +15,46 @@
 
 	<link rel="icon" type="image/png" href="assets/img/favicon.png">
 
-	<link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="http://apps.bdimg.com/libs/fontawesome/4.2.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/assets/css/screen.css">
 
 	<title>硬盘在歌唱</title>
 
 	<script>
-	var _hmt = _hmt || [];
-	(function() {
-	  var hm = document.createElement("script");
-	  hm.src = "//hm.baidu.com/hm.js?e0811847abcff7c3962075668a8d15ca";
-	  var s = document.getElementsByTagName("script")[0]; 
-	  s.parentNode.insertBefore(hm, s);
-	})();
+		var _hmt = _hmt || [];
+		(function() {
+			var hm = document.createElement("script");
+			hm.src = "//hm.baidu.com/hm.js?e0811847abcff7c3962075668a8d15ca";
+			var s = document.getElementsByTagName("script")[0]; 
+			s.parentNode.insertBefore(hm, s);
+		})();
 	</script>
-
 </head>
 
 <body>
 <div class="container">
-	<header class="row">
+	<header>
 		<h1><i class="fa fa-music"></i> 硬盘在歌唱 <i class="fa fa-music"></i></h1>
 		<p>我编程三日，两耳不闻人声，只有硬盘在歌唱。</p>
 	</header>
 
-	<section class="row">
-		{{range .}}
-		<div class="col-xs-12 col-sm-6 col-md-3">
-			<h2><i class="fa fa-pencil"></i> {{.Title}}</h2>
+	{{range .}}
+	<div>
+		<h2><i class="fa fa-pencil"></i> {{.Title}}</h2>
 			{{if .Description}} <p class="desc">{{.Description}}</p> {{end}}
 			{{range .Posts}}
-			  <p>
+				<p>
 					<a href="/{{.Name}}">{{.Title}}</a>
 					{{if .Description}} <p class="desc">{{.Description}}</p> {{end}}
 				</p>
 			{{end}}
-		</div>
-		{{end}}
-	</section>
+	</div>
+	{{end}}
 
-	<section class="row about">
-	<div class="col-xs-12 col-sm-6">
+	<section class="about">
+	<div>
 		<h2><i class="fa fa-user"></i> 关于作者</h2>
-		<p>黄梦龙，88年生，游戏程序猿，现于北京一个创业团队开发商业游戏。我是曾经的重度网游沉迷者、曾经的科幻爱好者、曾经的跑步爱好者。</p>
+		<p>黄梦龙，88年生游戏程序员，现于北京一个创业团队开发商业游戏。我是曾经的重度网游沉迷者、曾经的科幻爱好者、曾经的跑步爱好者。</p>
 		<p>我热爱编程，高中时由于不想听课自学了BASIC，在文曲星上编写小游戏在同学间传播，后来很幸运报考大学时选择了理想的专业，毕业后又开始了理想中的工作，build something的快乐一直伴随着我，希望能在技术的道路上一直走下去。</p>
 		<p>你可以通过以下各种方式找到我，欢迎Follow：</p>
 		<p>
@@ -69,7 +65,7 @@
 		</p>
 	</div>
 
-	<div class="col-xs-12 col-sm-6">
+	<div>
 		<h2><i class="fa fa-flag"></i> 关于本站</h2>
 		<p>本站目前的定位是个人博客，主要的主题是游戏服务器编程及Go语言，使用Go语言开发，代码和文章托管在GitHub，网站托管在阿里云ECS。</p>
 		<p><i class="fa fa-quote-left"></i>我编程三日，两耳不闻人声，只有硬盘在歌唱。<i class="fa fa-quote-right"></i> ——选自《编程之禅 水卷》</p>
@@ -79,13 +75,12 @@
 		</p>
 	</div>
 	</section>
+
+	<footer>
+		<p>本站文章采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>进行许可，文中涉及代码采用<a rel="license" href="http://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal</a>进行许可</p>
+		<p>订阅本站文章：<a href="http://disksing.com/feed" target="_blank"><i class="fa fa-rss-square"></i>ATOM</a>  <a href="http://disksing.com/rss" target="_blank"><i class="fa fa-rss-square"></i>RSS</a></p>
+		<p><a href="http://disksing.com/"><i class="fa fa-music"></i> 硬盘在歌唱 <i class="fa fa-music"></i></a> <i class="fa fa-copyright"></i> 2015</p>
+	</footer>
 </div>
-
-<footer>
-	<p>本站文章采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><i class="fa fa-cc"></i> BY 4.0</a>进行许可，文中涉及代码采用<a rel="license" href="http://creativecommons.org/publicdomain/zero/1.0/"><i class="fa fa-cc"></i>0 1.0 Universal</a>进行许可</p>
-	<p>订阅本站文章：<a href="http://disksing.com/feed" target="_blank"><i class="fa fa-rss-square"></i>ATOM</a>  <a href="http://disksing.com/rss" target="_blank"><i class="fa fa-rss-square"></i>RSS</a></p>
-	<p><a href="http://disksing.com/"><i class="fa fa-music"></i> 硬盘在歌唱 <i class="fa fa-music"></i></a> <i class="fa fa-copyright"></i> 2015</p>
-</footer>
-
 </body>
 </html>

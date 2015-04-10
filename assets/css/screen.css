@@ -4,15 +4,17 @@ html {
 
 body {
   font-size: 1.4em;
-  font-family: "Arial","宋体",sans-serif;
+  font-family: Palatino, Georgia, Times, "Times New Roman",serif;
   letter-spacing: 1px;
-  line-height: 1.6em;
+  line-height: 1.8em;
+  background-color: #7BA3A8;
+  color: #5B4947;
 }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 2.0em;
   font-weight: bold;
-  font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif; 
+  font-family: "Arial","黑体",sans-serif; 
 }
 
 h1 {
@@ -27,10 +29,14 @@ h3 {
   font-size: 1.1em;
 }
 
+article {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
 article h2:before {
   content: "| ";
 }
-
 
 ::-moz-selection {
     background: #D6EDFF;
@@ -41,15 +47,20 @@ article h2:before {
 }
 
 a {
-  color: #606060;
+  color: #555;
   text-decoration: none;
-  border-bottom: 1px dashed black;
+  border-bottom: 1px dashed #F35A4A;
   transition: color ease 0.3s;
 }
 
 a:hover {
-  color: #111;
+  color: #5B4947;
   text-decoration: none;
+}
+
+article a {
+  color: #BEAD92;
+  border-bottom: 1px dashed #F35A4A;
 }
 
 code {
@@ -57,8 +68,8 @@ code {
     font-size: 0.85em;
     font-family: consolas, monospace, sans-serif;
     white-space: pre-wrap;
-    border: #E3EDF3 1px solid;
-    background: #F7FAFB;
+    border: #EBEAD5 1px solid;
+    background: #FCFBE6;
     border-radius: 2px;
 }
 
@@ -66,14 +77,14 @@ pre {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0 0 1.75em 0;
-    border: #E3EDF3 1px solid;
+    border: #EBEAD5 1px solid;
     width: 100%;
     padding: 10px;
     font-family: consolas, monospace, sans-serif;
     font-size: 0.9em;
     white-space: pre;
     overflow: auto;
-    background: #F7FAFB;
+    background: #FCFBE6;
     border-radius: 3px;
 }
 
@@ -106,7 +117,19 @@ table td {
     line-height: 20px;
     text-align: left;
     vertical-align: top;
-    border-top: #EFEFEF 1px solid;
+    border-top: #BEAD92 1px solid;
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  background-color: #F4F3DE;
+  padding: 60px 6.66% 15px 6.66%;
+}
+
+.container div {
+  float: left;
+  min-width: 50%;
 }
 
 header {
@@ -114,18 +137,17 @@ header {
 }
 
 footer {
-  border-top: #CFCFCF 1px solid;
+  clear: both;
+  border-top: #F35A4A 1px solid;
+  padding-top: 15px;
   text-align: center;
   font-size: 0.8em;
-}
-
-.post {
-  max-width: 760px;
-  margin: 0 auto;
+  line-height: 0.8em;
 }
 
 .about {
-  border-top: #CFCFCF 1px solid;
+  clear: both;
+  border-top: #F35A4A 1px solid;
 }
 
 .desc {
