@@ -58,11 +58,6 @@ a:hover {
   text-decoration: none;
 }
 
-article a {
-  color: #BEAD92;
-  border-bottom: 1px dashed #F35A4A;
-}
-
 code {
     padding: 1px 3px;
     font-size: 0.85em;
@@ -142,7 +137,7 @@ footer {
   padding-top: 15px;
   text-align: center;
   font-size: 0.8em;
-  line-height: 0.8em;
+  line-height: 1.1em;
 }
 
 .about {
