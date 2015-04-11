@@ -4,7 +4,7 @@ html {
 
 body {
   font-size: 1.4em;
-  font-family: Palatino, Georgia, Times, "Times New Roman",serif;
+  font-family: Georgia, Times, serif;
   letter-spacing: 1px;
   line-height: 1.8em;
   background-color: #7BA3A8;
@@ -14,7 +14,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   line-height: 2.0em;
   font-weight: bold;
-  font-family: "Arial","黑体",sans-serif; 
+  font-family: "Arial","黑体",sans-serif;
 }
 
 h1 {
@@ -46,12 +46,15 @@ a {
   text-decoration: none;
   border-bottom: 1px dashed #F35A4A;
   transition: color ease 0.3s;
-  padding-bottom: 2px;
 }
 
 a:hover {
   color: #5B4947;
   text-decoration: none;
+}
+
+article a {
+  padding-bottom: 2px;
 }
 
 code {
