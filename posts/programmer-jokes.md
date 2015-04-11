@@ -102,7 +102,7 @@ Keyboard not found ... press F1 to continue
 （10秒钟后）卧槽。。。
 
 <div id="recursion"></div>
-[个人最喜欢的递归笑话](#recursion)
+<a href="#recursion" target="_blank">个人最喜欢的递归笑话</a>
 
 ## 奇思妙想篇
 电脑是高速的笨蛋，程序员是低速的笨蛋。

@@ -29,11 +29,6 @@ h3 {
   font-size: 1.1em;
 }
 
-article {
-  word-wrap: break-word;
-  word-break: break-all;
-}
-
 article h2:before {
   content: "| ";
 }
