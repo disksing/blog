@@ -1,7 +1,7 @@
 title:  Go语言设计模式：迭代器
 description: 
 time: 2014/10/30 12:00
-category: golang
+category: languages
 ++++++++
 
 ## 关于“Go语言设计模式”系列
