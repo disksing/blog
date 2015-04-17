@@ -57,6 +57,10 @@ article a {
   padding-bottom: 2px;
 }
 
+article p {
+  text-align: justify;
+}
+
 code {
     padding: 1px 3px;
     font-size: 0.85em;
