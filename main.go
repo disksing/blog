@@ -37,10 +37,15 @@ func build() {
 			}
 
 			var b bytes.Buffer
-			err = t.ExecuteTemplate(&b, "post.t", p)
-			if err != nil {
-				log.Error(err)
-				return nil
+
+			if p.HTML != "" {
+				b = *bytes.NewBufferString(p.Content)
+			} else {
+				err = t.ExecuteTemplate(&b, "post.t", p)
+				if err != nil {
+					log.Error(err)
+					return nil
+				}
 			}
 
 			pages["/"+p.Name] = b

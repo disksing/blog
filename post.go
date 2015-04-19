@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"bytes"
 	"fmt"
+	"io/ioutil"
 	"os"
 	"path/filepath"
 	"strings"
@@ -20,6 +21,7 @@ type Post struct {
 	Time        time.Time
 	Category    string
 	Content     string
+	HTML        string
 }
 
 func parsePost(path string) (*Post, error) {
@@ -62,18 +64,25 @@ func parsePost(path string) (*Post, error) {
 			}
 		case "category":
 			p.Category = v
+		case "html":
+			p.HTML = v
 		default:
 			return nil, fmt.Errorf("invalid header: %s", s)
 		}
 	}
 
-	var content bytes.Buffer
-	for scanner.Scan() {
-		content.Write(scanner.Bytes())
-		content.WriteString("\n")
-	}
+	if p.HTML != "" {
+		b, _ := ioutil.ReadFile(p.HTML)
+		p.Content = string(b)
+	} else {
+		var content bytes.Buffer
+		for scanner.Scan() {
+			content.Write(scanner.Bytes())
+			content.WriteString("\n")
+		}
 
-	p.Content = string(blackfriday.MarkdownCommon(content.Bytes()))
+		p.Content = string(blackfriday.MarkdownCommon(content.Bytes()))
+	}
 
 	return p, nil
 }
