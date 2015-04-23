@@ -58,8 +58,8 @@
 		<p>我热爱编程，高中时由于不想听课自学了BASIC，在文曲星上编写小游戏在同学间传播，后来很幸运报考大学时选择了理想的专业，毕业后又开始了理想中的工作，build something的快乐一直伴随着我，希望能在技术的道路上一直走下去。</p>
 		<p>你可以通过以下各种方式找到我，欢迎Follow：</p>
 		<p>
-			<i class="fa fa-envelope-o fa-2x"></i><a href="mailto:menglong@outlook.com">电子邮件</a>
-			<i class="fa fa-github-alt fa-2x"></i><a href="https://github.com/huangml">GitHub</a>
+			<i class="fa fa-envelope-o fa-2x"></i><a href="mailto:i@disksing.com">电子邮件</a>
+			<i class="fa fa-github-alt fa-2x"></i><a href="https://github.com/disksing">GitHub</a>
 			<i class="fa fa-weibo fa-2x"></i><a href="http://weibo.com/539523448">新浪微博</a>
 			<i class="fa fa-twitter fa-2x"></i><a href="https://twitter.com/disksing">Twitter</a>
 		</p>
@@ -70,8 +70,8 @@
 		<p>本站目前的定位是个人博客，主要的主题是游戏服务器编程及Go语言，使用Go语言开发，代码和文章托管在GitHub，网站托管在阿里云ECS。</p>
 		<p><i class="fa fa-quote-left"></i>我编程三日，两耳不闻人声，只有硬盘在歌唱。<i class="fa fa-quote-right"></i> ——选自《编程之禅 水卷》</p>
 		<p>
-			<i class="fa fa-github fa-2x"></i><a href="https://github.com/huangml/disksing.com">项目主页</a>
-			<i class="fa fa-bug fa-2x"></i><a href="https://github.com/huangml/disksing.com/issues">遇到问题？</a>
+			<i class="fa fa-github fa-2x"></i><a href="https://github.com/disksing/blog">项目主页</a>
+			<i class="fa fa-bug fa-2x"></i><a href="https://github.com/disksing/blog/issues">遇到问题？</a>
 		</p>
 	</div>
 	</section>
