@@ -74,7 +74,7 @@ drwxrwxr-x 6  500  500     4096 Mar 29 08:35 seafile-server-4.1.2
 ```
 
 ### 4. 配置
-使用如下命令启动一个Docker容器来配置Seafile，注意将`/home/app/seafile`换成你的目录！
+使用如下命令启动一个Docker容器来配置Seafile，**注意将`/home/app/seafile`换成你的目录**。
 
 ```
 docker run -t -i --rm -p 10001:10001 -p 12001:12001 -p 8000:8000 -p 8080:8080 -p 8082:8082 -v /home/app/seafile:/opt/seafile jenserat/seafile -- /bin/bash
@@ -90,7 +90,7 @@ docker run -t -i --rm -p 10001:10001 -p 12001:12001 -p 8000:8000 -p 8080:8080 -p
 root@635064a090b9:/# May 10 08:37:40 635064a090b9 syslog-ng[20]: syslog-ng starting up; version='3.5.3'
 ```
 
-下面我们在容器中运行`setup-seafile.sh`脚本后按提示进行配置，本例中我们配置为通过域名`sf.disksing.com`访问，各种端口一路回车用默认的就行，因为我们可以更改启动Docker容器时设置端口映射。
+下面我们在容器中运行`setup-seafile.sh`脚本后按提示进行配置，本例中我们配置为通过域名`sf.disksing.com`访问，各种端口一路回车用默认的就行，因为我们可以在启动Docker容器时设置端口映射。
 
 ```
 root@635064a090b9:/# cd /opt/seafile/seafile-server-4.1.2/
@@ -136,7 +136,7 @@ You can use a-z, A-Z, 0-9, _ and -, and the length should be 3 ~ 15
 What is the ip or domain of this server?
 For example, www.mycompany.com, or, 192.168.1.101
 
-[This server's ip or domain]: sf.disksing.com
+[This server's ip or domain] : sf.disksing.com
 
 What tcp port do you want to use for ccnet server?
 10001 is the recommended port.
