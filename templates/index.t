@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="我编程三日，两耳不闻人声，只有硬盘在歌唱。">
-	<meta name="keywords" content="黄梦龙,游戏开发,游戏程序,游戏服务器,Go语言,Golang">
+	<meta name="keywords" content="黄梦龙,游戏开发,游戏程序,游戏服务器,Go语言,Golang,数据库,分布式系统,分布式数据库">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 
 	<!-- Set render engine for 360 browser -->
@@ -54,7 +54,7 @@
 	<section class="about">
 	<div>
 		<h2><i class="fa fa-user"></i> 关于作者</h2>
-		<p>黄梦龙，88年生游戏程序员，现于北京一个创业团队开发商业游戏。我是曾经的重度网游沉迷者、曾经的科幻爱好者、曾经的跑步爱好者。</p>
+		<p>黄梦龙，88年生程序员，有多年游戏服务器开发背景，现于北京开发开源数据库产品。我是曾经的重度网游沉迷者、曾经的科幻爱好者、曾经的跑步爱好者。</p>
 		<p>我热爱编程，高中时由于不想听课自学了BASIC，在文曲星上编写小游戏在同学间传播，后来很幸运报考大学时选择了理想的专业，毕业后又开始了理想中的工作，build something的快乐一直伴随着我，希望能在技术的道路上一直走下去。</p>
 		<p>你可以通过以下各种方式找到我，欢迎Follow：</p>
 		<p>
@@ -67,7 +67,7 @@
 
 	<div>
 		<h2><i class="fa fa-flag"></i> 关于本站</h2>
-		<p>本站目前的定位是个人博客，主要的主题是游戏服务器编程及Go语言，使用Go语言开发，代码和文章托管在GitHub，网站托管在阿里云ECS。</p>
+		<p>本站目前的定位是个人博客，主要的主题是游戏服务器编程、Go语言和分布式数据库，使用Go语言开发，代码和文章托管在GitHub，网站托管在阿里云ECS。</p>
 		<p><i class="fa fa-quote-left"></i>我编程三日，两耳不闻人声，只有硬盘在歌唱。<i class="fa fa-quote-right"></i> ——选自《编程之禅 水卷》</p>
 		<p>
 			<i class="fa fa-github fa-2x"></i><a href="https://github.com/disksing/blog">项目主页</a>
