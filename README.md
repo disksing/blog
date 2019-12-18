@@ -1,3 +1,7 @@
+Not maintained. Moved to [disksing.github.io](https://github.com/disksing/disksing.github.io)
+
+---------
+
 # disksing.com
 my personal blog (in Chinese)
 
